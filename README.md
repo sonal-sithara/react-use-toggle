@@ -4,14 +4,24 @@ Basically, what this hook does is that, it takes a parameter with value true or 
 
 **Usage**
 
+```javascript
+npm i @reactdev/react-use-toggle
 ```
+
+```javascript
+import useToggle from "@reactdev/react-use-toggle";
+```
+
+```javascript
 function App() {
- // Call the hook which returns, current value and the toggler function
+  // Call the hook which returns, current value and the toggler function
 
- const [isTextChanged, setIsTextChanged] = useToggle();
+  const [isTextChanged, setIsTextChanged] = useToggle();
 
- return (
-     <button onClick={setIsTextChanged}>{isTextChanged ? 'Toggled' : 'Click to Toggle'}</button>
- );
+  return (
+    <button onClick={setIsTextChanged}>
+      {isTextChanged ? "Toggled" : "Click to Toggle"}
+    </button>
+  );
 }
 ```
